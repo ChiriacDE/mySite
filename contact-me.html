@@ -9,18 +9,22 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div> <!-----------------------------DIV CONTACT--------------------------------------->
-        <h1>Contact Me</h1>
+    <div class="contactContainer"> <!-----------------------------DIV CONTACT--------------------------------------->
+        <div class="innerContactContainer">
+            <h1>Contact Me</h1>
 
-        <form action="mailto:andrei-chiriac@outlook.com" method="post" enctype="text/plain">
-            <label>Your name: </label><br>
-            <input type="text" name="yourName" placeholder="Enter your name"><br>
-            <label>Your email: </label><br>
-            <input type="email" name="yourEmail" placeholder="Enter your email"><br>
-            <label>Your message: </label><br>
-            <textarea name="yourMessage" cols="30" rows="10" placeholder="Write your message"></textarea><br>
-            <input type="submit" value="Send">
-        </form>
+            <form action="mailto:andrei-chiriac@outlook.com" method="post" enctype="text/plain">
+                <label>Your name: </label><br>
+                <input type="text" name="yourName" placeholder="Enter your name"><br>
+                <label>Your email: </label><br>
+                <input type="email" name="yourEmail" placeholder="Enter your email"><br>
+                <label>Your message: </label><br>
+                <textarea name="yourMessage" cols="30" rows="10" placeholder="Write your message"></textarea><br>
+                <input class="contactSubmiteButton" type="submit" value="SEND">
+            </form>
+        </div>
+
     </div>
+    
 </body>
 </html>

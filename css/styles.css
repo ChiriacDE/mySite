@@ -1,11 +1,14 @@
 /*****************************************TAGS SELECTOR*******************************************************/
 a {
     color: #127681;
+    line-height: 1.75em;
+    padding: 5px;
 }
 
 body {
+
     font-family: 'Merriweather', serif;
-    font-size: 1.5em;
+    font-size: 1.25em;
     margin: 0;
     text-align: center;
 
@@ -29,7 +32,7 @@ h2{
 h3, h4 {
     color: #127681;
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -39,16 +42,52 @@ hr {
     
 }
 
+input, textarea {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin: 10px;
+
+}
+
+input {
+    width: 20%; height: 24px;
+}
+
+p {
+    line-height: 1.75em;
+    text-align: justify;
+}
+
 span {
     color: #023e44;
 }
 
 /*****************************************CLASS SELECTOR******************************************************/
-.computerImg, .chilliesImg {
-    border: solid 5px;
+.bottomContainer {
+    background-color: #F3C623;
+    margin-bottom: -45px;
+    padding-top: 1em;
+}
+
+.btn {
+    color: #127681;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.chilliesImg, .computerImg {
+    border: solid 0.25em;
     border-color: #F3C623;
     border-radius: 100%;
-    width: 250px;
+    float: left;
+    margin-right: 50px;
+    width: 25%;
+}
+
+.chilliesImg {
+    float: right;
+    margin-left: 50px;
 }
 
 .cloudMiddle{
@@ -60,7 +99,7 @@ span {
 .cloudBottom {
     position: absolute;
         top: 400px;
-        left: 550px;
+        left: 450px;
     width: 12.5%;
 
 }
@@ -71,22 +110,67 @@ span {
     width: 10.5%;
 }
 
+.contactSubmiteButton {
+    background-color: #F4F6FF;
+    border-color: #023e44;
+    box-shadow: 2px 2px 2px #023e44;
+    color: #127681;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 34px;
+    margin-bottom: 25px;
+    width: 10%;
+}
+
+.footer {
+    color: #023e44;
+}
+
+.innerContactContainer {
+    background-color: #F4F6FF;
+    background-image: url(../images/pencil.png);
+    background-position: 17.5%;
+    background-repeat: no-repeat;
+    background-size: 20%;
+    border: solid 4px #023e44;
+    margin: 50px auto;
+    width: 60%;
+}
+
 .goals {
     background-color: #F4F6FF;
     padding: 20px;
 }
 
+.goalDivider {
+    border-style: dotted none none none;
+    border-top-width: 7.5px;
+    color: #F3C623;
+    margin: auto;
+    width: 7.5%;
+}
+
+.profile, .goalRow, .contactMe {
+    margin: 100px auto;
+    width: 50%;
+}
+
 .mountainImg {
     width: 45%;
-    margin-bottom: -7px;
+    margin-bottom: -5px;
 }
 
 .profileImg {
-    border: solid 5px;
+    border: solid 0.35em;
     border-color: #127681;
     border-radius: 100%;
-    margin-top: 25px;
-    width: 350px;
+    margin: auto;
+    width: 50%;
+}
+
+.socialMedia {
+    width: 20px;
 }
 
 .topContainer {
@@ -94,6 +178,5 @@ span {
     border-bottom:  2.5px solid #023e44;
     padding-top: 100px;
     position: relative;
-    
+}
 
-   }

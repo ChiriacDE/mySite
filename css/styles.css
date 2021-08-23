@@ -5,29 +5,31 @@ a {
 
 body {
     font-family: 'Merriweather', serif;
+    font-size: 1.5em;
     margin: 0;
     text-align: center;
+
 }
 
 h1 {
     color: #F3C623;
     font-family: 'Sacramento', cursive;
-    font-size: 56px;
+    font-size: 5.625rem;
     font-weight: bold;
-    margin: 0;
+    margin: 50px auto -20px;
 }
 
 h2{
     color: #023e44;
     font-family: 'Montserrat', sans-serif;
-    font-size: 28px;
+    font-size: 3rem;
     font-weight: bold;
 }
 
 h3, h4 {
     color: #127681;
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
@@ -57,14 +59,16 @@ span {
 
 .cloudBottom {
     position: absolute;
-    top: 300px;
-    left: 750px;
+        top: 400px;
+        left: 550px;
+    width: 12.5%;
 
 }
 .cloudTop {
     position: absolute;
         top: 50px;
-        right: 750px;
+        right: 550px;
+    width: 10.5%;
 }
 
 .goals {
@@ -73,7 +77,8 @@ span {
 }
 
 .mountainImg {
-    margin-bottom: -4px;
+    width: 45%;
+    margin-bottom: -7px;
 }
 
 .profileImg {
@@ -81,7 +86,7 @@ span {
     border-color: #127681;
     border-radius: 100%;
     margin-top: 25px;
-    width: 300px;
+    width: 350px;
 }
 
 .topContainer {

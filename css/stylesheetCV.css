@@ -1,0 +1,123 @@
+/***************************************TAG SELECTORS******************************************************/
+a {
+    color: #127681;
+    line-height: 1.75em;
+    padding: 5px;
+}
+
+body {
+    background-color: #F4F6FF;
+    font-family: 'Merriweather', serif;
+    font-size: 1.25em;
+    margin: 0;
+}
+
+h1 {
+    color: #10375C;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5.625rem;
+    font-weight: bold;
+    margin: 0;
+    text-decoration: underline;
+} 
+
+h3 {
+  color: #127681;  
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h4 {
+    margin: 0 0 15px;
+}
+
+hr {
+    color: #10375C;
+    border-style: solid none none;
+    border-width: 3px;
+    margin: 0;
+
+}
+
+li {
+    padding: 5px;
+}
+
+td {
+    padding-right: 25px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+
+/***************************************CLASS SLECTORS*******************************************************/
+.btn {
+    color: #127681;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.contactMeContainer {
+    background-color: white;
+    margin: auto;
+    padding: 25px 50px;
+}
+
+.infoEducation, .infoOtherEducation {
+    background-color: white;
+    margin: auto;
+    padding: 5px 50px;
+}
+
+.infoPersonal, .infoWorkExperience, .infoSkills {
+    margin: auto;
+    padding: 5px 50px;
+}
+
+.mailAndPhone {
+    position: relative;
+        left: 25px;
+        bottom: 10px;
+}
+
+.profileImage {
+    border: 5px solid #127681;
+    border-radius: 100%;
+    margin: 50px;
+    width: 300px; height: 300px;
+
+}
+
+.profileInfo {
+    position: absolute;
+        top: 60px;
+        left: 400px;
+}
+
+.skillsLanguages, .skillsTechnical {
+    display: inline-block;
+    line-height: 1.75em;
+    margin-bottom: 25px;
+    width: 30%;
+    
+}
+
+.socialMedia {
+    width: 25px;
+}
+
+.skillsTechnical {
+    width: 50%;
+}
+
+
+/****************************************ID SLECTORS********************************************************/
+#languageSelector {
+    position: absolute;
+        top: 17.5px;
+        right: 17.5px;
+}

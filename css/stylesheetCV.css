@@ -29,7 +29,7 @@ h3 {
 }
 
 h4 {
-    margin: 0 0 15px;
+    margin: 15px 0;
 }
 
 hr {
@@ -42,10 +42,7 @@ hr {
 
 li {
     padding: 5px;
-}
-
-td {
-    padding-right: 25px;
+    line-height: 1.5;
 }
 
 ul {
@@ -61,6 +58,7 @@ ul {
     font-weight: bold;
 }
 
+
 .contactMeContainer {
     background-color: white;
     margin: auto;
@@ -70,18 +68,19 @@ ul {
 .infoEducation, .infoOtherEducation {
     background-color: white;
     margin: auto;
-    padding: 5px 50px;
+    padding: 25px 50px;
 }
 
 .infoPersonal, .infoWorkExperience, .infoSkills {
     margin: auto;
-    padding: 5px 50px;
+    padding: 25px 50px;
 }
 
 .mailAndPhone {
     position: relative;
         left: 25px;
-        bottom: 10px;
+        bottom: 5px;
+    margin-bottom: 25px;
 }
 
 .profileImage {
@@ -93,27 +92,13 @@ ul {
 }
 
 .profileInfo {
-    position: absolute;
-        top: 60px;
-        left: 400px;
+   margin-left: 50px;
+   margin-top: 50px;
 }
 
-.skillsLanguages, .skillsTechnical {
-    display: inline-block;
-    line-height: 1.75em;
-    margin-bottom: 25px;
-    width: 30%;
-    
+.spacing {
+    margin-top: 15px;
 }
-
-.socialMedia {
-    width: 25px;
-}
-
-.skillsTechnical {
-    width: 50%;
-}
-
 
 /****************************************ID SLECTORS********************************************************/
 #languageSelector {
@@ -121,3 +106,37 @@ ul {
         top: 17.5px;
         right: 17.5px;
 }
+
+/**************@MEDIA************/
+
+@media screen and (max-width: 860px) {
+
+    h1 {
+       font-size: 5em;
+    }
+    .profileImage {
+        margin-left: 75px;
+        width: 250px; height: 250px;
+    }
+    .row {
+        margin-right: 0;
+    }
+
+  }
+
+@media screen and (max-width: 560px) {
+    h1 {
+        font-size: 3em;
+    }
+    body {
+        font-size: 1em;
+    }
+    .mailAndPhone {
+        width: 200px;
+    }
+    .profileImage {
+        margin-left: 75px;
+        width: 200px; height: 200px;
+    }
+
+   }

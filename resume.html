@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My CV</title>
+    <title>Mein Lebenslauf. Andrei Chiriac.</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:ital@1&family=Sacramento&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/stylesheetCV.css">
@@ -13,28 +13,45 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+     <!-- JQUERY LIBRARY -->
+     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
+     <script>
+        $(document).ready(function () {
+            $("img.flagGer").click(function () {
+                window.location.href = this.id + "resume.html";
+            });
+            $("img.flagUS").click(function () {
+                window.location.href = this.id + "resume-en.html";
+            });
+            $("img.flagEsp").click(function () {
+                window.location.href = this.id + "resume-es.html";
+            });
+        });
+    </script>
 </head>
 <body> 
-
-    <div id="languageSelector"> <!-----------------------------------------DIV LANGUAGES FLAGS----------------------------------------->
-        <img src="images/1200px-Flag_of_Germany.svg.webp" alt="German Language" width="30px" height="15px">
-        <img src="images/640px-English_language.svg.png" alt="English Language" width="30px" height="15px">
-    </div>
-
+    <section id="mainInfo">
+        <div id="languageSelector"> <!-----------DIV LANGUAGES FLAGS------------------>
+            <img class="flagGer" src="images/german-flag.png" alt="German Language" width="30px" height="30px">
+            <img class="flagUS" src="images/english-american-flag.png" alt="English Language" width="27px" height="27px">
+            <img class="flagEsp" src="images/spanish-flag.jpeg" alt="Spanish Language" width="30px" height="30px">
+        </div>
     <div>
         <div class="row"> <!-----------------------------------------DIV PROFILE PIC & INFO----------------------------------------->
             <div class="profileInfo col-lg-7 col-md-5 col-sm-12">            
-                <h1 id="myName">Andrei Chiriac</h1>
+                <h1 class="bigHeading">Andrei Chiriac</h1>
                 <div class="row mailAndPhone">
-                    <div class="col-">andrei.chiriac@gmail.com;&nbsp;</div>
+                    <div class="col-">andrei.chiriac@outlook.com;&nbsp;</div>
                     <div class="col-">0157 53037751</div>
                 </div>
                 <div class="row ">
                     <div class="col-lg-12">
-                        <p><strong><em> Pursuing a Bachelor's Degree in Computer Engineering at the <a href="https://www.uoc.edu/portal/en/index.html">Universitat Oberta de Catalunya (UOC)</a></em></strong>.</p>
-                        <p>On my path to become a Web Developer!</p>
-                        <hr>
+                        <p><strong><em>Ich studiere an der <a class="highlighter" href="https://www.uoc.edu/portal/en/index.html">Universitat 
+                            Oberta de Catalunya (UOC)</a> einen Bachelor in Computer Engineering.</em></strong></p>
+                        <p>Auf meinem Weg zum Webentwickler!</p>
+                        <hr class="divider">
                     </div>
                 </div>
 
@@ -47,98 +64,99 @@
 
     <div class="row infoPersonal"> <!-----------------------------------------DIV INFO----------------------------------------->
        <div class="col-12">
-            <h3>Personal Information</h3>
-            <ul>
-                <li>Birthdate: 16.08.1996</li>
-                <li>Birthplace: Com&abreve;ne&scedil;ti, Romania</li>
-                <li>Address: K&ouml;nigswinter, 53639 - Germany</li>
-                <li>Nationality: Romanian</li>
+            <h3 class="lilHeading">Pers&ouml;nlische Information</h3>
+            <ul class="infoList">
+                <li class="listItem">Geburtsdatum: 16.08.1996</li>
+                <li class="listItem">Geburtsort: Com&abreve;ne&scedil;ti, Rum&auml;nien</li>
+                <li class="listItem">Anschrift: K&ouml;nigswinter, 53639</li>
+                <li class="listItem">Staatsb&uuml;rgerschaft: Rum&auml;nisch</li>
             </ul>
        </div>
     </div>
-    <hr>
+    </section>
+    <hr class="divider">
     <div class="row infoEducation"> <!-----------------------------------DIV EDUCATION INFO----------------------------------------->
         <div class="col-12">    
-            <h3>Education</h3>     
+            <h3 class="lilHeading">Ausbildung</h3>     
         </div>        
         <div class="spacing col-lg-2 col-md-4 col-sm-12-">
-            <p>02.2021 - Current</p>
+            <p>02.2021 - Aktuell</p>
         </div>
         <div class="spacing col-lg-10 col-md-8 col-sm-12">
-            <p><b>Degree in Computer Engineering</b></p>
+            <p><b>Bachelor in Computer Engineering</b></p>
             <p><em>Universitat Oberta de Catalunya (UOC)</em></p>
-            <p>Relevant subjects:</p>
-            <ul>
-                <li>Algebra</li>
-                <li>Teamwork on the web</li>
-                <li>Fundamentals of computers</li>
-                <li>Software engineering</li>
+            <p>Relevante F&auml;cher:</p>
+            <ul class="educationList">
+                <li class="listItem">Algebra</li>
+                <li class="listItem">Teamarbeit im Netz</li>
+                <li class="listItem">Grundlagen der Computertechnik</li>
+                <li class="listItem">Software Engineering</li>
             </ul>
-            <p>Current GPA: 9.25 out of 10</p>
+            <p>Aktueller Notendurchschnitt: 1.3</p>
         </div>
         <div class="spacing col-lg-2 col-md-4 col-sm-12-">
             <p>09.2015 - 07.2018</p>
         </div>
         <div class="spacing col-lg-10 col-md-8 col-sm-12">
-            <p><b>LOE - Tourism Accommodation Management</b></p>
-            <p><em>School of Hotel Management and Tourism of Lleida, Spain</em></p>
-            <p>Relevant subjects:</p>
-            <ul>
-                <li>Marketing mix and new technologies, marketing plan</li>
-                <li>Foreign languages: english and french </li>
-                <li>Internship with Erasmus Plus scholarship in Osnabr&uuml;ck, Germany</li>
+            <p><b>Berufsausbildung zum Hotelfachmann</b></p>
+            <p><em>Schule f&uuml;r Hotelmanagement und Tourismus in Lleida, Spanien</em></p>
+            <p>Relevante F&auml;cher:</p>
+            <ul class="educationList">
+                <li class="listItem">arketing-Mix und neue Technologien, Marketingplan</li>
+                <li class="listItem">Fremdsprachen: englisch und französisch </li>
+                <li class="listItem">Praktikum mit Erasmus-Plus-Stipendium in Osnabr&uuml;ck, Deutschland</li>
             </ul>
         </div>
     </div>
-    <hr>
+    <hr class="divider">
     <div class="row infoWorkExperience"> <!-----------------------------------------DIV WORK EXPERIENCE -------------------------------------------->
         <div class="col-12">
-            <h3>Work Experience</h3>
+            <h3 class="lilHeading">Berufserfahrung</h3>
         </div>
         <div class="spacing col-lg-2 col-md-4 col-sm-12-">
-            <p>08.2020 - Current</p>
+            <p>08.2020 - Aktuell</p>
         </div>
         <div class="spacing col-lg-10 col-md-8 col-sm-12">
-            <p><b>Bartender</b></p>
-            <p><em>Hole in One Restaurant by Godesberger Golfclub, Wachtberg</em></p>
+            <p><b>Barkeeper</b></p>
+            <p><em>Hole in One Restaurant beim Godesberger Golfclub, Wachtberg</em></p>
             <ul>
-                <li>Responsible for serving and accounting for beverage stock control on a part-time basis.</li>
+                <li class="listItem">Verantwortlich für den Getränkeausschank und die Verwaltung des Lagerbestandes auf Teilzeitbasis.</li>
             </ul>
         </div>
         <div class="spacing col-lg-2 col-md-4 col-sm-12-">
             <p>09.2018 - 08.2020</p>
         </div>
         <div class="spacing col-lg-10 col-md-8 col-sm-12">
-            <p><b>Events and meetings coordinator</b></p>
+            <p><b>Ansprechpartnerin für Veranstaltungen und Tagungen</b></p>
             <p><em>Maritim Hotel in Bonn</em></p>
             <ul>
-                <li>Preparation and service of meetings and events in B2B and B2C environments.</li>
+                <li class="listItem">Vorbereitung und Durchführung von Sitzungen und Veranstaltungen im B2B- und B2C-Bereich.</li>
             </ul>
         </div>
     </div>
-    <hr> 
+    <hr class="divider"> 
     <div class="row infoOtherEducation"> <!-----------------------------------------DIV OTHER EDUCATION ----------------------------------------->
         <div class="col-12">
-            <h3>Other Education and Participations</h3>
+            <h3 class="lilHeading">Sonstige Bildung und Beteiligungen</h3>
         </div>
         <div class="spacing col-lg-2 col-md-4 col-sm-12">
-            <p>08.2021 - Current</p>
+            <p>08.2021 - Aktuell</p>
         </div>
         <div class="spacing col-lg-10 col-md-8 col-sm-12">
             <p><b>The Complete 2021 Web Development Bootcamp</b></p>
-            <p><em>Online Programming Bootcamp by <a href="https://www.udemy.com/">Udemy</a></em></p>
+            <p><em>Online-Programmier-Bootcamp auf <a class="highlighter" href="https://www.udemy.com/">Udemy</a></em></p>
             <ul>
-                <li>A course of programming HTML, CSS, JavaScript, Node.js, React, and more.</li>
+                <li class="listItem">Ein Kurs zur Programmierung von HTML, CSS, JavaScript, Node.js, React und mehr.</li>
             </ul>
         </div>
         <div class="spacing col-lg-2 col-md-4 col-sm-12">
             <p>02.2021 - 06.2021</p>
         </div>
         <div class="spacing col-lg-10 col-md-8 col-sm-12">
-            <p><b>Accreditation of Information Communication Technology Skills</b></p>
-            <p><em>Open University of Catalonia (UOC)</em></p>
+            <p><b>Akkreditierung von Kenntnissen in der Informations- und Kommunikationstechnologie</b></p>
+            <p><em>Universitat Oberta de Catalunya (UOC)</em></p>
             <ul>
-                <li>Official Accreditation after successfully completing the subject Teamwork on the web with an average of 91%. </li>
+                <li class="listItem"> Offizielle Zertifizierung nach erfolgreichem Abschluss des Faches Teamarbeit im Netz mit einem Durchschnitt von 91%.</li>
             </ul>
         </div>
         <div class="spacing col-lg-2 col-md-4 col-sm-12">
@@ -146,69 +164,68 @@
         </div>
         <div class="spacing col-lg-10 col-md-8 col-sm-12">
             <p><b>Ganz sch&ouml;n helle! Wir bauen und programmieren eine intelligente Straßenbeleuchtung :-)</b></p>
-            <p><em>Codeweek Bonn-Rhein-Sieg in colaboration with the Deutsche Telekom Stiftung.</em></p>
+            <p><em>Codeweek Bonn-Rhein-Sieg in Zusammenarbeit mit der Deutschen Telekom Stiftung.</em></p>
             <ul>
-                <li>Workshop offered by the <em>Deutsche Telekom</em> focused on the language <em>Arduino</em>, 
-                    the <em>senseBox</em> and the Physical Computing.
+                <li class="listItem">Ein von der <em>Deutschen Telekom</em> angebotener Workshop beschäftigte sich mit der Software Arduino, der senseBox und dem Physical Computing.</li>
             </ul>
         </div>
         <div class="spacing col-lg-2 col-md-4 col-sm-12">
             <p>08.2019 - 10.2019</p>
         </div>
         <div class="spacing col-lg-10 col-md-8 col-sm-12">
-            <p><b>C1 intensive German course</b></p>
-            <p><em>Language school Bonnlingua, Bonn</em></p>
+            <p><b>C1-Intensiv-Deutschkurs</b></p>
+            <p><em>Sprachschule Bonnlingua, Bonn</em></p>
         </div>
     </div>
-    <hr>
+    <hr class="divider">
     <div class="infoSkills"> <!-----------------------------------------DIV SKILLS ----------------------------------------->
-        <h3>Skills</h3>
+        <h3 class="lilHeading">Kenntnisse</h3>
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-12">
-                <h4>Languages</h4>
-                 <table>
+                <h4 class="skillsHeaders">Sprachen</h4>
+                 <table class="languagesTable">
                     <tr>
-                        <td>Spanish: </td>
-                        <td>Native/Bilingual</td>
+                        <td class="tableItem">Spanisch: </td>
+                        <td class="tableItem">Muttersprache</td>
                     </tr>
                     <tr>
-                        <td>Romanian:&nbsp;</td>
-                        <td>Native/Bilingual</td>
+                        <td class="tableItem">Rum&auml;enisch:&nbsp;</td>
+                        <td class="tableItem">Muttersprache</td>
                     </tr>
                     <tr>
-                        <td>Catalan: </td>
-                        <td>Fluent</td>
+                        <td class="tableItem">Katalanisch: </td>
+                        <td class="tableItem">Fließend</td>
                     </tr>
                     <tr>
-                        <td>German: </td>
-                        <td>Fluent</td>
+                        <td class="tableItem">Deutsch: </td>
+                        <td class="tableItem">Fließend</td>
                     </tr>
                     <tr>
-                        <td>English: </td>
-                        <td>Proficient</td>
+                        <td class="tableItem">Englisch: </td>
+                        <td class="tableItem">Kompetent</td>
                     </tr>
                     <tr>
-                        <td>French: </td>
-                        <td>Beginner</td>
+                        <td class="tableItem">Franz&ouml;sisch: </td>
+                        <td class="tableItem">Anf&auml;nger</td>
                     </tr>
                  </table>
             </div>
             <div class="col-lg-9 col-md-6 col-sm-12">
-                <h4>Technical</h4>
-                <ul>
-                    <li>Professional level in <em>MS Office</em>, specifically in <em>PowerPoint, Excel, Word</em> and <em>Outlook</em></li>
-                    <li>Intermediate knowledge in <em>HTML, CSS</em> and <em>JavaScript</em> programation</li>
-                    <li>Intermediate knowledge in <em>bootstrap 4.0</em></li>
-                    <li>Basic knowledge in JavaScripts libraries <em>JQuery, React</em>, the open-source tool <em>Node.js</em> and the framework <em>Express.js</li>
-                    <li>Basic knowledge in <em>SQL Databases and NOSQL with MongoDB and Mongoose</li>
+                <h4 class="skillsHeaders">Technisch</h4>
+                <ul class="technicalList">
+                    <li class="listItem">Professionelles Niveau in <em>MS Office</em>, insbesondere in <em>PowerPoint, Excel, Word</em> und <em>Outlook</em></li>
+                    <li class="listItem">Fortgeschrittene Kenntnisse in <em>HTML, CSS</em> und <em>JavaScript</em> programmierung</li>
+                    <li class="listItem">Fortgeschrittene Kenntnisse in <em>bootstrap 4.0</em></li>
+                    <li class="listItem">Grundkenntnisse in JavaScripts-Bibliotheken und Frameworks <em>JQuery, React, Node.js</em> und <em>Express.js</em></li>
+                    <li class="listItem">Grundkenntnisse  in <em>SQL-Databanken und NOSQL mit MongoDB und Mongoose</li>
                 </ul>
             </div>
         </div>
     </div>
-    <hr>
+    <hr class="divider">
     <div class="row contactMeContainer">    
         <div class="col-">
-            <a class="btn" href="contact-me.html">Contact Me </a>
+            <a class="highlighter btn btn-outline-primary btn-lg" href="contact-me.html">Konktaktaufnahme</a>
         </div>
     </div>
 </body>

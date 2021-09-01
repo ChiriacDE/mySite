@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cont&aacute;ctame. Andrei Chiriac.</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:ital@1&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon3.ico" type="image/x-icon">
+
+    <!-- JQUERY LIBRARY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("img.flagGer").click(function () {
+                window.location.href = this.id + "contact-me.html";
+            });
+            $("img.flagUS").click(function () {
+                window.location.href = this.id + "contact-me-en.html";
+            });
+            $("img.flagEsp").click(function () {
+              window.location.href = this.id + "contact-me-es.html";
+          });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="languageSelector">
+        <img class="flagGer" src="images/german-flag.png" alt="German Language" width="30px" height="30px">
+        <img class="flagUS" src="images/english-american-flag.png" alt="English Language" width="27px" height="27px">
+        <img class="flagEsp" src="images/spanish-flag.jpeg" alt="Spanish Language" width="30px" height="30px">
+    </div>
+    <section id="contact">
+        <div class="contactContainer">
+            <h1 class="bigHeading">Cont&aacute;ctame</h1>
+
+            <form action="mailto:andrei-chiriac@outlook.com" method="post" enctype="text/plain">
+                <label class="contactLabel">Tu nombre: </label><br>
+                <input class="contactInput" type="text" name="yourName" placeholder="Introduce tu nombre"><br>
+                <label class="contactLabel">Tu email: </label><br>
+                <input class="contactInput" type="email" name="yourEmail" placeholder="Introduce tu email"><br>
+                <label class="contactLabel">Tu mensaje: </label><br>
+                <textarea class="contactInput" name="yourMessage" cols="30" rows="10"
+                    placeholder="Escribe tu mensaje para mi"></textarea><br>
+                <input class="contactSubmiteButton" type="submit" value="ENVIAR">
+            </form>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

@@ -1,31 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+    <title>Konktaktaufnahme. Andrei Chiriac.</title>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:ital@1&family=Sacramento&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="images/favicon3.ico" type="image/x-icon">
+ 
+ 
+    <!-- JQUERY LIBRARY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("img.flagGer").click(function () {
+                window.location.href = this.id + "contact-me.html";
+            });
+            $("img.flagUS").click(function () {
+                window.location.href = this.id + "contact-me-en.html";
+            });
+            $("img.flagEsp").click(function () {
+              window.location.href = this.id + "contact-me-es.html";
+            });
+        });
+    </script>
 </head>
 <body>
-    <div class="contactContainer"> <!-----------------------------DIV CONTACT--------------------------------------->
-        <div class="innerContactContainer">
-            <h1>Contact Me</h1>
+<div id="languageSelector">
+    <img class="flagGer" src="images/german-flag.png" alt="German Language" width="30px" height="30px">
+    <img class="flagUS" src="images/english-american-flag.png" alt="English Language" width="27px" height="27px">
+    <img class="flagEsp" src="images/spanish-flag.jpeg" alt="Spanish Language" width="30px" height="30px">
+</div>
+    <section id="contact"> 
+        
+        <div class="contactContainer">
+            <h1 class="bigHeading">Kontaktiere mich</h1>
 
             <form action="mailto:andrei-chiriac@outlook.com" method="post" enctype="text/plain">
-                <label>Your name: </label><br>
-                <input type="text" name="yourName" placeholder="Enter your name"><br>
-                <label>Your email: </label><br>
-                <input type="email" name="yourEmail" placeholder="Enter your email"><br>
-                <label>Your message: </label><br>
-                <textarea name="yourMessage" cols="30" rows="10" placeholder="Write your message"></textarea><br>
-                <input class="contactSubmiteButton" type="submit" value="SEND">
+                <label class="contactLabel">Dein Name: </label><br>
+                <input class="contactInput" type="text" name="yourName" placeholder="Namen eintragen"><br>
+                <label class="contactLabel">Deine Email: </label><br>
+                <input class="contactInput" type="email" name="yourEmail" placeholder="Email Adresse eintrage"><br>
+                <label class="contactLabel">Deine Mitteilung: </label><br>
+                <textarea class="contactInput" name="yourMessage" cols="30" rows="10" placeholder="Schreibe hier deine Mitteilung für mich!"></textarea><br>
+                <input class="contactSubmiteButton" type="submit" value="SENDEN">
             </form>
         </div>
 
-    </div>
+    </section>
     
 </body>
 </html>

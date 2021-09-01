@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    description="Me llamo Andrei Chiriac, tengo 25 años y actualmente estudio la carrera de ingeniería informática. Para complementar mis estudios, 
+    quiero encontrar un trabajo que me dé la experiencia necesaria para convertirme en un buen desarrollador de software una vez que termine mi carrera de ingeniería.">
+  <title>Mi P&aacute;gina. Andrei Chiriac.</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:ital@1&family=Sacramento&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- JQUERY LIBRARY -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+
+    <script>
+      $(document).ready(function () {
+          $("img.flagGer").click(function () {
+              window.location.href = this.id + "index.html";
+          });
+          $("img.flagUS").click(function () {
+              window.location.href = this.id + "index-en.html";
+          });
+          $("img.flagEsp").click(function () {
+              window.location.href = this.id + "index-es.html";
+          });
+      });
+  </script>
+
+<body>
+  <section id="title">
+
+    <div class="topContainer">
+      <div id="languageSelector">
+        <!-----------DIV LANGUAGES FLAGS------------------>
+        <img class="flagGer" src="images/german-flag.png" alt="German Language" width="30px" height="30px">
+        <img class="flagUS" src="images/english-american-flag.png" alt="English Language" width="27px" height="27px">
+        <img class="flagEsp" src="images/spanish-flag.jpeg" alt="Spanish Language" width="30px" height="30px">
+      </div>
+      <img class="cloudTop" src="images/cloud.png" alt="cloudImg1">
+
+      <h1 class="bigHeading">Me llamo Andrei.</h1>
+      <h3 class="lilHeading">Soy <span class="highlighter">estudiante</span> de Ingenier&iacute;a inform&aacute;tica!</h3>
+
+      <img class="cloudBottom" src="images/cloud.png" alt="cloudImg2">
+
+
+      <img class="mountainImg" src="images/mountain.png" alt="mountainImg">
+    </div>
+  </section>
+
+  <section id="description">
+    <div class="profile">
+      <img class="profileImg" src="images/sloth.jpg" alt="slothProfileImg">
+      <h2 class="midHeading">Hola!</h2>
+      <p>Estoy estudiando el <span class="highlighter">grado de Ingenier&iacute;a Inform&aacute;tica</span> en la <a class="btn"
+          href="https://www.uoc.edu/portal/index.html">Universitat Oberta de Catalunya (UOC)</a>,
+          en mi trayectoria para convertirme en desarrollador web!</p>
+    </div>
+    <hr class="divider">
+  </section>
+  <section id="myGoals">
+
+    <h2 class="midHeading">Mis objetivos</h2>
+    <div class="goalRow">
+
+      <h3 class="lilHeading">Acabar el grado </h3>
+      <img class="computerImg" src="images/computer.png" alt="computerImg">
+      <p>Mi objetivo a corto plazo es terminar mis estudios universitarios con &eacute;xito, pero 
+        <span class="highlighter">sobre todo</span>, sacarle el m&aacute;ximo partido y aprender todos los conocimientos necesarios para dominar las materias que he estudiado.</p>
+    </div>
+    <hr class="divider">
+    <div class="goalRow">
+
+      <h3 class="lilHeading">Convertirme en un desarrollador Full-stack</h3>
+      <img class="chilliesImg" src="images/chillies.png" alt="chilliesImg">
+      <p>Mi entusiasmo y gran motivaci&oacute;n por la materia es mi mayor garant&iacute;a para <span class="highlighter">conseguir mis objetivos</span>.
+        Una vez que termine mis estudios, quiero seguir form&aacute;ndome y aprendiendo para convertirme en un gran desarrollador Web.</p>
+    </div>
+
+  </section>
+
+  <section id="contact">
+    <hr class="divider">
+    <div class="contactMe">
+      <h2 class="midHeading">Contacta conmigo</h2>
+      <h3 class="lilHeading">&Eacute;chale un ojo a mi <a class="btn" href="resume-es.html"> Curr&iacute;culum</a> y no dudes en de contactarme. </h3>
+      <p>En &eacute;l puedes encontrar un perfil m&aacute;s profesional, donde resumo mis estudios, experiencia laboral, habilidades e
+        intereses.
+        Consulta mi GitHub por si estoy trabajando en un nuevo proyecto y no dudes en ponerte en contacto conmigo para cualquier cosa que necesites
+        consultarme.</p>
+      <a class="btn btnContact" href="contact-me-es.html">CONT&Aacute;CTAME</a>
+    </div>
+    <hr class="divider">
+  </section>
+
+
+  <footer id="footer" role="contentinfo">
+    <img class="socialMedia" src="images/github.png" alt="githubIcon">
+    <a class="btn" href="https://github.com/ChiriacDE">GitHub</a>
+    <img class="socialMedia" src="images/twitter.png" alt="twiterIcon">
+    <a class="btn" href="https://twitter.com/ChiriacRo">Twitter</a>
+    <br>
+    <a class="footer-text">© 2021 Andrei Chiriac</p>
+  </footer>
+
+
+</body>
+
+</html>

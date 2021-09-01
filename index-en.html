@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    description="My name is Andrei Chiriac, I'm 25 and I'm currently studying a degree in computer engineering. To complement my studies, 
+    I want to find a job that will give me the necessary experience to become a good software developer once I finish my engineering degree.">
+  <title>My Site. Andrei Chiriac.</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:ital@1&family=Sacramento&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- JQUERY LIBRARY -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+
+    <script>
+      $(document).ready(function () {
+          $("img.flagGer").click(function () {
+              window.location.href = this.id + "index.html";
+          });
+          $("img.flagUS").click(function () {
+              window.location.href = this.id + "index-en.html";
+          });
+          $("img.flagEsp").click(function () {
+              window.location.href = this.id + "index-es.html";
+          });
+      });
+  </script>
+
+<body>
+  <section id="title">
+
+    <div class="topContainer">
+      <div id="languageSelector">
+        <!-----------DIV LANGUAGES FLAGS------------------>
+        <img class="flagGer" src="images/german-flag.png" alt="German Language" width="30px" height="30px">
+        <img class="flagUS" src="images/english-american-flag.png" alt="English Language" width="27px" height="27px">
+        <img class="flagEsp" src="images/spanish-flag.jpeg" alt="Spanish Language" width="30px" height="30px">
+      </div>
+      <img class="cloudTop" src="images/cloud.png" alt="cloudImg1">
+
+      <h1 class="bigHeading">I'm Andrei.</h1>
+      <h3 class="lilHeading">A <span class="highlighter">Student</span> of Computer Engineering!</h3>
+
+      <img class="cloudBottom" src="images/cloud.png" alt="cloudImg2">
+
+
+      <img class="mountainImg" src="images/mountain.png" alt="mountainImg">
+    </div>
+  </section>
+
+  <section id="description">
+    <div class="profile">
+      <img class="profileImg" src="images/sloth.jpg" alt="slothProfileImg">
+      <h2 class="midHeading">Hello!</h2>
+      <p>I'm pursuing a <span class="highlighter">Bachelor's Degree in Computer Engineering</span> at the <a class="btn"
+          href="https://www.uoc.edu/portal/en/index.html">Universitat Oberta de Catalunya (UOC)</a>,
+        on my path to become a Web Developer!</p>
+    </div>
+    <hr class="divider">
+  </section>
+  <section id="myGoals">
+
+    <h2 class="midHeading">My goals</h2>
+    <div class="goalRow">
+
+      <h3 class="lilHeading">Finish my Degree </h3>
+      <img class="computerImg" src="images/computer.png" alt="computerImg">
+      <p>My short term goal is to finish my university studies successfully,
+        but <span class="highlighter">above all</span> to get the most out of it and learn all the necessary knowledge
+        to master the subjects I have studied.</p>
+    </div>
+    <hr class="divider">
+    <div class="goalRow">
+
+      <h3 class="lilHeading">Become a Full-stack Developer</h3>
+      <img class="chilliesImg" src="images/chillies.png" alt="chilliesImg">
+      <p>My passion and great motivation for the subject is my greatest guarantee to <span class="highlighter"> achieve
+          my goals</span>.
+        Once I finish my studies, I want to continue training and learning to become a great Developer.</p>
+    </div>
+
+  </section>
+
+  <section id="contact">
+    <hr class="divider">
+    <div class="contactMe">
+      <h2 class="midHeading">Get In Touch</h2>
+      <h3 class="lilHeading">Check out my <a class="btn" href="resume-en.html"> R&eacute;sum&eacute;</a> and feel free
+        to contact me.</h3>
+      <p>In it you can find a more professional profile, where I summarize my studies, work experience, skills and
+        interests.
+        Check my GitHub in case I'm working on a new project and don't doubt to contact me for anything you may need to
+        discuss with me.</p>
+      <a class="btn btnContact" href="contact-me-en.html">CONTACT ME</a>
+    </div>
+    <hr class="divider">
+  </section>
+
+
+  <footer id="footer" role="contentinfo">
+    <img class="socialMedia" src="images/github.png" alt="githubIcon">
+    <a class="btn" href="https://github.com/ChiriacDE">GitHub</a>
+    <img class="socialMedia" src="images/twitter.png" alt="twiterIcon">
+    <a class="btn" href="https://twitter.com/ChiriacRo">Twitter</a>
+    <br>
+    <a class="footer-text">© 2021 Andrei Chiriac</p>
+  </footer>
+
+
+</body>
+
+</html>

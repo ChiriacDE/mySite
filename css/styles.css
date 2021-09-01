@@ -1,12 +1,4 @@
-/*****************************************TAGS SELECTOR*******************************************************/
-a {
-    color: #127681;
-    line-height: 1.75em;
-    padding: 5px;
-}
-
 body {
-
     font-family: 'Merriweather', serif;
     font-size: 1.25em;
     margin: 0;
@@ -14,66 +6,163 @@ body {
 
 }
 
-h1 {
-    color: #F3C623;
-    font-family: 'Sacramento', cursive;
-    font-size: 5.625rem;
-    font-weight: bold;
-    margin: 50px auto -20px;
-}
-
-h2{
-    color: #023e44;
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
     font-weight: bold;
 }
 
-h3, h4 {
-    color: #127681;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
+p {
+    position: relative;
+    line-height: 1.75em;
+    text-align: justify;
 }
 
-hr {
+.divider {
     color: #023e44;
     margin: 0;
     
 }
 
-input, textarea {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    margin: 10px;
-
+/************** HEADINGS SECTION ****************/
+.bigHeading {
+    color: #F3C623;
+    font-family: 'Sacramento', cursive;
+    font-size: 5.625rem;
+    margin: 50px auto -20px;
 }
 
-input {
-    width: 20%; height: 24px;
+.midHeading {
+    color: #023e44;
+    font-size: 3rem;
 }
 
-p {
-    line-height: 1.75em;
-    text-align: justify;
+.lilHeading {
+    color: #127681;
+    font-size: 2rem;
+    
+}
+/************** FLAG SECTION ****************/
+#languageSelector {
+    position: absolute;
+        top: 17.5px;
+        right: 17.5px;
 }
 
-span {
+.flagGer {
+    border-radius: 100%;
+}
+
+.flagGer:hover {
+    transition: 1s;
+    width: 40px; height: 40px;
+}
+
+.flagGer:not(:hover) {
+    transition: 1s;
+}
+
+.flagUS {
+    border-radius: 100%;
+    padding-bottom: 1.5px;
+}
+
+.flagUS:hover {
+    transition: 1s;
+    width: 40px; height: 40px;
+}
+
+.flagUS:not(:hover) {
+    transition: 1s;
+}
+
+.flagEsp {
+    border-radius: 100%;
+}
+
+.flagEsp:hover {
+    transition: 1s;
+    width: 40px; height: 40px;
+}
+
+.flagEsp:not(:hover) {
+    transition: 1s;
+}
+
+/************** FRONT SECTION ****************/
+
+.cloudBottom {
+    position: absolute;
+        top: 400px;
+        left: 450px;
+    width: 12.5%;
+    animation: flickerAnimation 10s infinite, zoomies 25s infinite linear reverse;   
+}
+
+.cloudTop {
+    position: absolute;
+        top: 50px;
+        right: 550px;
+    width: 10.5%;
+    animation: flickerAnimation 12.5s infinite, zoomies 22.5s infinite linear;
+}
+
+.highlighter {
     color: #023e44;
 }
 
-/*****************************************CLASS SELECTOR******************************************************/
-.bottomContainer {
-    background-color: #F3C623;
-    margin-bottom: -45px;
-    padding-top: 1em;
+.mountainImg {
+    width: 50%;
+    margin-bottom: -6px;
 }
 
-.btn {
-    color: #127681;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
+.topContainer {
+    background-color: #F4F6FF;
+    border-bottom:  2.5px solid #023e44;
+    padding-top: 100px;
+    position: relative;
+}
+
+/************** DESCRIPTION SECTION ****************/
+
+.profile, .goalRow, .contactMe {
+    margin: 100px auto;
+    width: 60%;
+}
+
+.profileImg {
+    border: solid 0.35em;
+    border-color: #127681;
+    border-radius: 100%;
+    margin: auto;
+    width: 350px;
+}
+
+.profileImg:hover {
+    transition: 1s;
+    border-color: #F3C623;
+}
+.profileImg:not(:hover) {
+    transition: 1s;
+}
+
+/************** GOALS SECTION ****************/
+
+#myGoals {
+    background-color: #F4F6FF;
+    padding: 20px;
+}
+
+
+#myGoals .lilHeading {
+    text-align: center;
+}
+
+#myGoals .divider {
+    border-style: dotted none none none;
+    border-top-width: 7.5px;
+    color: #F3C623;
+    margin: 20px auto 50px;
+    width: 7.5%;
 }
 
 .chilliesImg, .computerImg {
@@ -81,8 +170,9 @@ span {
     border-color: #F3C623;
     border-radius: 100%;
     float: left;
-    margin: 50px;
+    margin-right: 50px;
     width: 200px; height: 200px;
+    
 }
 
 .chilliesImg {
@@ -90,24 +180,52 @@ span {
     margin-left: 50px;
 }
 
-.cloudMiddle{
-    position: absolute;
-    top: 140px;
-    
+.goalRow {
+    padding-bottom: 50px;
+}
+/************** CONTACT SECTION ****************/
+.btn {
+    color: #127681;
+    line-height: 1.75em;
+    padding: 5px;
 }
 
-.cloudBottom {
-    position: absolute;
-        top: 400px;
-        left: 450px;
-    width: 12.5%;
+.btnContact {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+/************** FOOTER SECTION ****************/
+#footer {
+    background-color: #F3C623;
+    padding: 2em;
+}
+
+.footer-text {
+    color: #023e44;
+    font-size: 0.75em;
+}
+
+.socialMedia {
+    width: 20px;
+}
+
+/***************** CONTACT PAGE *****************/
+.contactLabel, .contactInput {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin: 10px;
 
 }
-.cloudTop {
-    position: absolute;
-        top: 50px;
-        right: 550px;
-    width: 10.5%;
+
+.contactInput {
+    width: 20%; height: 24px;
+}
+
+textarea.contactInput{
+    width: 50%; height: 150px;
 }
 
 .contactSubmiteButton {
@@ -120,17 +238,13 @@ span {
     font-weight: bold;
     height: 34px;
     margin-bottom: 25px;
-    width: 100px;
+    width: 150px;
 }
 
-.footer {
-    color: #023e44;
-}
-
-.innerContactContainer {
+.contactContainer {
     background-color: #F4F6FF;
     background-image: url(../images/pencil.png);
-    background-position: 17.5% 35%;
+    background-position: 17.5% 40.5%;
     background-repeat: no-repeat;
     background-size: 20%;
     border: solid 4px #023e44;
@@ -138,151 +252,233 @@ span {
     width: 60%;
 }
 
-.goals {
-    background-color: #F4F6FF;
-    padding: 20px;
-}
-
-.goalDivider {
-    border-style: dotted none none none;
-    border-top-width: 7.5px;
-    color: #F3C623;
-    margin: auto;
-    width: 7.5%;
-}
-
-.goalRow {
-    padding-bottom: 50px;
-}
-
-.goalRow, .profile, .contactMe {
-    margin: 100px auto;
-    width: 50%;
-}
-
-.mountainImg {
-    width: 45%;
-    margin-bottom: -5px;
-}
-
-.profileImg {
-    border: solid 0.35em;
-    border-color: #127681;
-    border-radius: 100%;
-    margin: auto;
-    width: 350px;
-}
-
-.socialMedia {
-    width: 20px;
-}
-
-.topContainer {
-    background-color: #F4F6FF;
-    border-bottom:  2.5px solid #023e44;
-    padding-top: 100px;
-    position: relative;
-}
-
 /***************@MEDIA*****************/
-@media screen and (max-width: 1000px) {
-    .chilliesImg, .computerImg {
-        margin: 50px;
+@media screen and (max-width: 1250px) {
+    .contactMe, .goalRow, .profile {  
+        width: 65%;
+    }
+  
+    /***** IMAGES ******/
+    .cloudTop {
+        position: absolute;
+            right: 5%;
+        width: 18%;
+    }
+    .cloudBottom {
+        position: absolute;
+            left: 5%;
+        width: 20.5%;
+    }
+    .mountainImg {
+        width: 65%;
+    }
+    .chilliesImg {
+        margin-left: 50px;
+        width: 185px; height: 185px;
+    }
+    .computerImg {
+        margin-right: 50px;
+        width: 185px; height: 185px;
     }
 }
-@media screen and (max-width: 860px) {
-    body {
-        font-size: 1em;
-    }
-    h1 {
-        font-size: 4.5rem;
-        font-weight: bold;
-        margin: auto;
-    }
-    .contactMe {
-       
+@media screen and (max-width: 1080px) {
+    .goalRow {
         width: 70%;
     }
-    .chilliesImg, .computerImg {
-        margin: 60px 25px ;
-        width: 130px; height: 130px;
+   /***** IMAGES ******/ 
+    .cloudTop {
+        position: absolute;
+            right: 5%;
+        width: 25%;
     }
     .cloudBottom {
         position: absolute;
             left: 5%;
         width: 23%;
     }
+    .mountainImg {
+        width: 70%;
+    }
+    .chilliesImg {
+        margin-left: 50px;
+        margin-bottom: 50px;
+        width: 175px; height: 175px;
+    }
+    .computerImg {
+        margin-right: 50px;
+        margin-bottom: 50px;
+        width: 175px; height: 175px;
+    }
+
+}
+@media screen and (max-width:935px) {
+    .contactMe, .goalRow, .profile {  
+        width: 70%;
+    }
+    .chilliesImg {
+        margin-left: 50px;
+        margin-bottom: 125px;
+        width: 170px; height: 170px;
+    }
+    .computerImg {
+        margin-right: 50px;
+        margin-bottom: 70px;
+        width: 170px; height: 170px;
+    }
+ 
+}
+
+@media screen and (max-width: 860px) {
+    body {
+        font-size: 1em;
+    }
+    .contactMe, .goalRow, .profile {  
+        width: 75%;
+    }
+
+    #myGoals .divider {
+        margin: 50px auto;
+        width: 10.5%;
+    }
+    .bigHeading {
+        font-size: 4.5rem;
+        font-weight: bold;
+        margin: auto;
+    }
+ 
+    /***** IMAGES ******/ 
     .cloudTop {
         position: absolute;
             right: 5%;
         width: 25%;
     }
-    .innerContactContainer {
-      width: 80%;
-    }
-    .goalDivider {
-        margin: auto;
-        width: 17.5%;
-    }
-    .goalRow {
-        margin: 0 115px 0 125px;
-        width: 70%;
+    .cloudBottom {
+        position: absolute;
+            left: 5%;
+        width: 23%;
     }
     .mountainImg {
         width: 80%;
     }
-    .profile{
-        width: 70%;
-    }
     .profileImg {
         width: 300px;
     }
+    .chilliesImg {
+        margin-left: 50px;
+        margin-bottom: 50px;
+        width: 130px; height: 130px;
+    }
+    .computerImg {
+        margin-right: 50px;
+        width: 130px; height: 130px;
+    }
+
+    /***** CONTACT SITE *****/
+    .contactContainer {
+        width: 80%;
+      }
+}
+@media screen and (max-width: 690px) {
+    .chilliesImg {
+        margin-left: 50px;
+        margin-bottom: 50px;
+        width: 125px; height: 125px;
+    }
+    .computerImg {
+        margin-right: 50px;
+        width: 125px; height: 125px;
+    }
+
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 625px) {
+    .chilliesImg {
+        margin-left: 50px;
+        margin-bottom: 10px;
+        width: 100px; height: 100px;
+    }
+    .computerImg {
+        margin-right: 50px;
+        margin-bottom: 10px;
+        width: 100px; height: 100px;
+    }
+
+}
+
+@media screen and (max-width: 585px) {
     body {
         font-size: 1em;
     }
-    h1 {
+
+    /***** HEADINGS ******/ 
+    .bigHeading {
         font-size: 3rem;
         font-weight: bold;
         margin: auto;
     }
-    h2 {
+    .midHeading {
         font-size: 2em;
     }
-    h3, h4 {
+    .lilHeading {
         font-size: 1.5em;
+        margin: 0 5%;
     }
-    textarea {
-        width: 50%;
-    }
-    .chilliesImg, .computerImg {
-        margin: 0 15px 10px;
-        width: 75px; height: 75px;
-    }
-    .cloudBottom {
-        position: absolute;
-            top: 50%;
-            left: 5%;
-        width: 40%;
-    }
+
+    /***** IMAGES ******/ 
     .cloudTop {
         position: absolute;
             right: 1%;
         width: 35%;
     }
-    .innerContactContainer {
-        width: 95%; height:95%;
+    .cloudBottom {
+        position: absolute;
+            top: 55%;
+            left: 5%;
+        width: 40%;
     }
-    .goalRow {
-        margin: 0 40px 0 50px;
-        width: 70%;
+    .chilliesImg {
+        margin: 15px;
+        margin-left: 35px;
+        width: 75px; height: 75px;
+    }
+    .computerImg {
+        margin: 15px;
+        margin-right: 35px;
+        width: 75px; height: 75px;
     }
     .mountainImg {
         width: 100%;
+        margin-bottom: -5px;
     }
     .profileImg {
         width: 175px;
     }
+
+    /***** CONTACT SITE *****/
+    textarea {
+        width: 50%;
+    }
+    .contactContainer {
+        width: 95%; height:95%;
+    }
   }
+
+  /***** KEYFRAMES *****/
+  
+  @keyframes flickerAnimation {
+    0%   { opacity:0.1; }
+    50%  { opacity:1; }
+    100% { opacity:0.1; }
+  }
+
+  @keyframes zoomies {
+      from {
+          left: 15%;
+    }
+
+      to {
+          left: 80%;
+      }
+  }
+
+

@@ -5,41 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mein Lebenslauf. Andrei Chiriac.</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:ital@1&family=Sacramento&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/stylesheetCV.css">
-    <link rel="icon" href="images/favicon2.ico" type="image/x-icon">
 
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     
+    <!-- Bootstrap Scripts  -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
+    <!-- Fonts & Style Sheets -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:ital@1&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesheetCV.css">
+    <link rel="icon" href="images/favicon2.ico" type="image/x-icon">
+
      <!-- JQUERY LIBRARY -->
      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
-     <script>
-        $(document).ready(function () {
-            $("img.flagGer").click(function () {
-                window.location.href = this.id + "resume.html";
-            });
-            $("img.flagUS").click(function () {
-                window.location.href = this.id + "resume-en.html";
-            });
-            $("img.flagEsp").click(function () {
-                window.location.href = this.id + "resume-es.html";
-            });
-        });
-    </script>
 </head>
 <body> 
     <section id="mainInfo">
-        <div id="languageSelector"> <!-----------DIV LANGUAGES FLAGS------------------>
-            <img class="flagGer" src="images/german-flag.png" alt="German Language" width="30px" height="30px">
-            <img class="flagUS" src="images/english-american-flag.png" alt="English Language" width="27px" height="27px">
-            <img class="flagEsp" src="images/spanish-flag.jpeg" alt="Spanish Language" width="30px" height="30px">
+        <div id="languageSelector"> <!-- DIV LANGUAGES FLAGS -->
+            <img class="flagGer-cv" src="images/german-flag.png" alt="German Language" width="30px" height="30px">
+            <img class="flagUS-cv" src="images/english-american-flag.png" alt="English Language" width="27px" height="27px">
+            <img class="flagEsp-cv" src="images/spanish-flag.jpeg" alt="Spanish Language" width="30px" height="30px">
         </div>
     <div>
-        <div class="row"> <!-----------------------------------------DIV PROFILE PIC & INFO----------------------------------------->
+        <div class="row"> <!-- DIV PROFILE PIC & INFO -->
             <div class="profileInfo col-lg-7 col-md-5 col-sm-12">            
                 <h1 class="bigHeading">Andrei Chiriac</h1>
                 <div class="row mailAndPhone">
@@ -54,15 +46,12 @@
                         <hr class="divider">
                     </div>
                 </div>
-
             </div>
             <div class="col-lg-4 col-md-3 col-sm-12"><img class="profileImage" src="images/IMG_0590.JPG" alt="Profile Photo"></div>
         </div>
-
     </div>
 
-
-    <div class="row infoPersonal"> <!-----------------------------------------DIV INFO----------------------------------------->
+    <div class="row infoPersonal"> <!-- DIV INFO -->
        <div class="col-12">
             <h3 class="lilHeading">Pers&ouml;nlische Information</h3>
             <ul class="infoList">
@@ -75,7 +64,8 @@
     </div>
     </section>
     <hr class="divider">
-    <div class="row infoEducation"> <!-----------------------------------DIV EDUCATION INFO----------------------------------------->
+
+    <div class="row infoEducation"> <!-- DIV EDUCATION INFO -->
         <div class="col-12">    
             <h3 class="lilHeading">Ausbildung</h3>     
         </div>        
@@ -109,7 +99,8 @@
         </div>
     </div>
     <hr class="divider">
-    <div class="row infoWorkExperience"> <!-----------------------------------------DIV WORK EXPERIENCE -------------------------------------------->
+
+    <div class="row infoWorkExperience"> <!-- DIV WORK EXPERIENCE -->
         <div class="col-12">
             <h3 class="lilHeading">Berufserfahrung</h3>
         </div>
@@ -135,7 +126,8 @@
         </div>
     </div>
     <hr class="divider"> 
-    <div class="row infoOtherEducation"> <!-----------------------------------------DIV OTHER EDUCATION ----------------------------------------->
+
+    <div class="row infoOtherEducation"> <!-- DIV OTHER EDUCATION -->
         <div class="col-12">
             <h3 class="lilHeading">Sonstige Bildung und Beteiligungen</h3>
         </div>
@@ -178,7 +170,8 @@
         </div>
     </div>
     <hr class="divider">
-    <div class="infoSkills"> <!-----------------------------------------DIV SKILLS ----------------------------------------->
+
+    <div class="infoSkills"> <!-- DIV SKILLS -->
         <h3 class="lilHeading">Kenntnisse</h3>
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-12">
@@ -215,7 +208,7 @@
                 <ul class="technicalList">
                     <li class="listItem">Professionelles Niveau in <em>MS Office</em>, insbesondere in <em>PowerPoint, Excel, Word</em> und <em>Outlook</em></li>
                     <li class="listItem">Fortgeschrittene Kenntnisse in <em>HTML, CSS</em> und <em>JavaScript</em> programmierung</li>
-                    <li class="listItem">Fortgeschrittene Kenntnisse in <em>bootstrap 4.0</em></li>
+                    <li class="listItem">Fortgeschrittene Kenntnisse in <em>Bootstrap 4.0</em></li>
                     <li class="listItem">Grundkenntnisse in JavaScripts-Bibliotheken und Frameworks <em>JQuery, React, Node.js</em> und <em>Express.js</em></li>
                     <li class="listItem">Grundkenntnisse  in <em>SQL-Databanken und NOSQL mit MongoDB und Mongoose</li>
                 </ul>
@@ -223,10 +216,17 @@
         </div>
     </div>
     <hr class="divider">
-    <div class="row contactMeContainer">    
+
+    <div class="row contactMeContainer"> <!-- CONTACT SECTION -->
         <div class="col-">
             <a class="highlighter btn btn-outline-primary btn-lg" href="contact-me.html">Konktaktaufnahme</a>
         </div>
     </div>
+
+      <!-- JQUERY LIBRARY -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+<script src="index.js"></script>
+
 </body>
 </html> 

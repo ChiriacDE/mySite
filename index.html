@@ -6,49 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta description="Mein Name ist Andrei Chiriac, ich bin 25 Jahre alt und studiere zur Zeit Computer Engineering. Um mein Studium zu erg&auml;nzen, 
     m&ouml;chte ich einen Job finden, der mir die n&ouml;tige Erfahrung gibt, um ein guter Softwareentwickler zu werden, sobald ich mein Ingenieurstudium abgeschlossen habe.">
+    
     <title>Meine Seite. Andrei Chiriac.</title>
+
+    <!-- Fonts & Style Sheets -->
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:ital@1&family=Sacramento&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    
-    <!-- JQUERY LIBRARY -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-   
-    <script>
-      $(document).ready(function () {
-          $("img.flagGer").click(function () {
-              window.location.href = this.id + "index.html";
-          });
-          $("img.flagUS").click(function () {
-              window.location.href = this.id + "index-en.html";
-          });
-          $("img.flagEsp").click(function () {
-              window.location.href = this.id + "index-es.html";
-          });
-      });
-  </script>
+
 <body>
   <section id="title">
     <div class="topContainer">
-      <div id="languageSelector"> <!-----------DIV LANGUAGES FLAGS------------------>
+      <div id="languageSelector"> <!-- LANGUAGES FLAGS -->
         <img class="flagGer" src="images/german-flag.png" alt="German Language" width="30px" height="30px">
         <img class="flagUS" src="images/english-american-flag.png" alt="English Language" width="27px" height="27px">
         <img class="flagEsp" src="images/spanish-flag.jpeg" alt="Spanish Language" width="30px" height="30px">
-    </div>
+    </div> <!-- FRONT PAGE & TITLE -->
         <img class="cloudTop" src="images/cloud.png" alt="cloudImg1">
         
         <h1 class="bigHeading">Ich bin der Andrei.</h1>
         <h3 class="lilHeading">Ein <span class="highlighter">Student</span> der Computer Engineering!</h3>
         
         <img class="cloudBottom" src="images/cloud.png" alt="cloudImg2">
-
-
         <img class="mountainImg" src="images/mountain.png" alt="mountainImg">
     </div>
   </section>
 
     <section id="description">
-        <div class="profile">
+        <div class="profile"> <!-- DESCRIPTION SECTION -->
           <img class="profileImg" src="images/sloth.jpg" alt="slothProfileImg">
           <h2 class="midHeading">Hallo!</h2>
           <p>Ich studiere an der <a class="btn"href="https://www.uoc.edu/portal/en/index.html">Universitat Oberta de Catalunya (UOC)</a> einen <span class="highlighter">Bachelor in Computer Engineering</span>, 
@@ -56,8 +41,8 @@
         </div>
         <hr class="divider">
       </section>
-      <section id="myGoals">
-    
+
+      <section id="myGoals"> <!-- GOALS SECTION -->
           <h2 class="midHeading">Meine Ziele</h2>
           <div class="goalRow">
             
@@ -73,10 +58,9 @@
             <p>Meine Begeisterung und große Bereitschaft für das Studienfach sind meine gr&ouml;ßte Garantie, <span class="highlighter"> meine Zielvorstellungen zu erreichen</span>.
               Sobald ich mein Studium abgeschlossen habe, möchte ich mich weiterbilden und lernen, um ein großartiger Entwickler zu werden.</p>
           </div>
-  
       </section>
       
-      <section id="contact">
+      <section id="contact"> <!-- CONTACT SECTION -->
         <hr class="divider">
         <div class="contactMe">
           <h2 class="midHeading">Kontakt aufnehmen</h2>
@@ -88,15 +72,20 @@
       </section>
       
       
-      <footer id="footer" role="contentinfo">
-        <img class="socialMedia" src="images/github.png" alt="githubIcon">
-        <a class="btn" href="https://github.com/ChiriacDE">GitHub</a>
-        <img class="socialMedia" src="images/twitter.png" alt="twiterIcon">
-        <a class="btn" href="https://twitter.com/ChiriacRo">Twitter</a>
-        <br>
-        <a class="footer-text">© 2021 Andrei Chiriac</p>
-      </footer>
-      
+
+       <!-- JQUERY LIBRARY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+   <script src="index.js"></script>
 
 </body>
+
+<footer id="footer" role="contentinfo">
+  <img class="socialMedia" src="images/github.png" alt="githubIcon">
+  <a class="btn" href="https://github.com/ChiriacDE">GitHub</a>
+  <img class="socialMedia" src="images/twitter.png" alt="twiterIcon">
+  <a class="btn" href="https://twitter.com/ChiriacRo">Twitter</a>
+  <br>
+  <a class="footer-text">© 2021 Andrei Chiriac</p>
+</footer>
+
 </html>

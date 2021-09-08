@@ -15,43 +15,43 @@ h1, h2, h3, h4, h5, h6 {
         right: 17.5px;
 }
 
-.flagGer {
+.flagGer-cv {
     border-radius: 100%;
 }
 
-.flagGer:hover {
+.flagGer-cv:hover {
     transition: 1s;
     width: 40px; height: 40px;
 }
 
-.flagGer:not(:hover) {
+.flagGer-cv:not(:hover) {
     transition: 1s;
 }
 
-.flagUS {
+.flagUS-cv {
     border-radius: 100%;
     padding-bottom: 1.5px;
 }
 
-.flagUS:hover {
+.flagUS-cv:hover {
     transition: 1s;
     width: 40px; height: 40px;
 }
 
-.flagUS:not(:hover) {
+.flagUS-cv:not(:hover) {
     transition: 1s;
 }
 
-.flagEsp {
+.flagEsp-cv {
     border-radius: 100%;
 }
 
-.flagEsp:hover {
+.flagEsp-cv:hover {
     transition: 1s;
     width: 40px; height: 40px;
 }
 
-.flagEsp:not(:hover) {
+.flagEsp-cv:not(:hover) {
     transition: 1s;
 }
 /*********** HEADERS ***********/

@@ -3,7 +3,6 @@ body {
     font-size: 1.25em;
     margin: 0;
     text-align: center;
-
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,9 +37,9 @@ p {
 
 .lilHeading {
     color: #127681;
-    font-size: 2rem;
-    
+    font-size: 2rem;   
 }
+
 /************** FLAG SECTION ****************/
 #languageSelector {
     position: absolute;
@@ -91,19 +90,21 @@ p {
 /************** FRONT SECTION ****************/
 
 .cloudBottom {
+    opacity: 0.5;
     position: absolute;
         top: 400px;
         left: 450px;
     width: 12.5%;
-    animation: flickerAnimation 10s infinite, zoomies 25s infinite linear reverse;   
+    animation: zoomies 18s infinite linear reverse;   
 }
 
 .cloudTop {
+    opacity: 0.5;
     position: absolute;
         top: 50px;
         right: 550px;
     width: 10.5%;
-    animation: flickerAnimation 12.5s infinite, zoomies 22.5s infinite linear;
+    animation: zoomies 18s infinite linear;
 }
 
 .highlighter {
@@ -464,13 +465,6 @@ textarea.contactInput{
   }
 
   /***** KEYFRAMES *****/
-  
-  @keyframes flickerAnimation {
-    0%   { opacity:0.1; }
-    50%  { opacity:1; }
-    100% { opacity:0.1; }
-  }
-
   @keyframes zoomies {
       from {
           left: 15%;
